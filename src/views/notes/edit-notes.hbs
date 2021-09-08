@@ -1,0 +1,21 @@
+<div class='col-md-4 mx-auto mt-4'>
+	<div class='card'>
+		<div class='card-header'>
+			<h3>Edit Note</h3>
+		</div>
+		<div class='card-body'>
+			<form action='/notes/edit-note/{{id}}?_method=PUT' method='POST'>
+				<input type='hidden' name='_method' value='PUT' />
+				<div class='form-group'>
+					<input type='text' name='title' class='form-control' placeholder='Title' value='{{title}}' />
+				</div>
+				<div class='form-group mt-4'>
+					<textarea name='description' class='form-control' placeholder='Description'>{{description}}</textarea>
+				</div>
+				<div class='form-group mt-4'>
+					<button class='btn btn-success btn-block w-100 rounded' type='submit'>Save</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,11 @@
+{{#if success_msg}}
+	<div class='alert alert-dismissible alert-success mt-4'>
+		{{success_msg}}
+		<button type='button' class='btn-close' data-bs-dismiss='alert'></button>
+	</div>
+{{else if error_msg}}
+	<div class='alert alert-dismissible alert-danger mt-4'>
+		{{error_msg}}
+		<button type='button' class='btn-close' data-bs-dismiss='alert'></button>
+	</div>
+{{/if}}

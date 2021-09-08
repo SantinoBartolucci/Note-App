@@ -1,0 +1,27 @@
+{
+	"name": "notes-app",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "node src/index.js",
+		"dev": "nodemon src/index.js"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"bcryptjs": "^2.4.3",
+		"connect-flash": "^0.1.1",
+		"express": "^4.17.1",
+		"express-handlebars": "^5.3.3",
+		"express-session": "^1.17.2",
+		"method-override": "^3.0.0",
+		"mongoose": "^5.13.7",
+		"morgan": "^1.10.0",
+		"passport": "^0.4.1",
+		"passport-local": "^1.0.0"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.12"
+	}
+}
