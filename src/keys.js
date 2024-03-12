@@ -1,5 +1,5 @@
 module.exports = {
 	mongodb: {
-		URI: 'mongodb+srv://Santino:xKUa33oeHmh5kB9C@cluster0.50jkm.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
+		URI: 'mongodb+srv://Santino:xKUa33oeHmh5kB9C@cluster0.adsh6ab.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0',
 	},
 };

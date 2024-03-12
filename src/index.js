@@ -1,6 +1,6 @@
 const express = require('express');
 const path = require('path');
-const exphbs = require('express-handlebars');
+const engine = require('express-handlebars');
 const methodOverride = require('method-override');
 const morgan = require('morgan');
 const session = require('express-session');
@@ -17,15 +17,11 @@ app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
 app.engine(
 	'.hbs',
-	exphbs({
+	engine({
 		defaultLayout: 'main',
 		layoutsDir: path.join(app.get('views'), 'layouts'),
 		partialsDir: path.join(app.get('views'), 'partials'),
 		extname: '.hbs',
-		runtimeOptions: {
-			allowProtoPropertiesByDefault: true,
-			allowProtoMethodsByDefault: true,
-		},
 	})
 );
 app.set('view engine', '.hbs');
